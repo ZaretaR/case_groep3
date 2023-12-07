@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserveren</title>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+        <div class="logo"><a href="index.html">Mokka Lounge</a></div>
+            <nav>    
+                <ul class="keuze">
+                    <li><a href="reserveren.html">Reserveren</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over_ons.html">Over ons</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+</header>
+
+<div class="formulier">
+  <form action="validatie/met/java.php" id="reserveer">
+      <div>
+        <label for="naam">Naam</label>
+          <input type="text">
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+          <input type="text">
+      </div>
+      <div>
+        <label for="datum">Datum</label>
+          <input type="text">
+        <label for="uur">Uur</label>
+          <input type="text">
+      </div>
+      <div>
+        <label for="gelegenheid">Gelegenheid</label>
+          <select name="gelegenheid" id="gelegenheid">
+            <option value="geen">geen</option>
+            <option value="verjaardag">Verjaardag</option>
+            <option value="babyshower">Baby Shower</option>
+            <option value="bachelorette">Bachelorette</option>
+            <option value="schoolevenement">Schoolevenement</option>
+          </select>
+        <label for="aantalpersonen">Aantal personen</label>
+          <select name="aantalpersonen" id="aantalpersonen">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+      </div>
+      <div>
+        <label for="bericht">Bericht</label>
+        <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
+      </div>
+      <div>
+        <input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur()" />
+      </div>
+    </form>
+  
+  <footer>
+    <div class="containerfooter">
+        <div class="kolomfooter">
+            <img src="images/mokkalogo.png" alt="logo van Mokka Lounge">
+            <p><a href="gdpr.html">GDPR & Privacy regelementering</a></p>
+        </div>
+
+        <div class="kolomfooter">
+            <div class="contact">
+                <h3>Contact:</h3>
+                <p>telnr. 011/19 00 57</p>
+            </div>
+            
+            <div class="contact">
+                <h3>Sociale media</h3>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        
+        <div class="kolomfooter">
+            <div class="uren">
+                <h3>Openingsuren</h3>
+                <p>ma:Gesloten</p>
+                <p>di:12:00–00:00</p>
+                <p>wo:12:00–00:00</p>
+                <p>do:12:00–00:00</p>
+                <p>vr:12:00–01:00</p>
+                <p>za:12:00–01:00</p>
+                <p>zo:14:00–23:00</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
