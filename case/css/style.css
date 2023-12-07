@@ -67,11 +67,24 @@ a:hover {
 h1 {
     color: black;
 }
+.tekst_over{
+    width: 600px;
+    text-align: left;
+}
 
 /*menu*/
 
 /*media*/
-
+.verzameling{
+    position: inline-block;
+}
+.verzameling:nth-child(1){
+    float: left;
+}
+.verzameling:nth-child(2){
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 /*contact*/
 
 .maps {
@@ -117,15 +130,4 @@ footer {
 
 .contact h3 {
   font-weight: bold;
-}
-/* voor mediapagina */
-.verzameling{
-    position: inline-block;
-}
-.verzameling:nth-child(1){
-    float: left;
-}
-.verzameling:nth-child(2){
-    justify-content: flex-end;
-    flex-wrap: wrap;
 }
