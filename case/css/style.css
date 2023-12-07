@@ -75,16 +75,16 @@ h1 {
 /*menu*/
 
 /*media*/
-.verzameling{
-    position: inline-block;
+.galerij{
+    flex-direction: row;
 }
-.verzameling:nth-child(1){
-    float: left;
+.galerij img{
+    margin: 8px;
 }
-.verzameling:nth-child(2){
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
+
+
+
+
 /*contact*/
 
 .maps {
