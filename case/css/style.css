@@ -7,45 +7,42 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	padding: 20px 0;
+}
+
 /*header*/
 
-.container {
-    width: 1200px;
-}
-
-header {
-    background-color: white;
-    height: 20vh;
-    position: relative;
-}
-
 .navbar {
-    color: black;
+    width: 1200px;
+    margin: auto;
     display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 10vh;
+    gap: 20px;
+    padding: 30px;
     font-size: 18px;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
 }
 
 nav {
     text-align: right;
-}
-
-.logo {
-    margin-left: 50px;
-    font-weight: 800;
-    cursor: default;
+    width: 1000px;
 }
 
 nav ul {
-    display: inline-block;
-    margin-right: 50px;
+    margin: 0;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 35px;
+    padding-left: 20px;
 }
 
 a {
@@ -59,7 +56,7 @@ a:hover {
 }
 
 .achtergrond {
-    position: absolute;
+    position: relative;
     display: flex;
     height: 100vh;
     align-self: center;
@@ -67,13 +64,7 @@ a:hover {
 
 /*over ons*/
 
-.container {
-    height: 100vh;
-    background-color: white;
-}
-
 h1 {
-    margin-top: 50px;
     color: black;
 }
 
@@ -83,28 +74,42 @@ h1 {
 
 /*contact*/
 
+.maps {
+    position: relative;
+}
+
 /*gdpr*/
 
 /*footer*/
-.containerfooter{
-  width: 100%;
-  display: flex;
-  background-color: grey;
+
+footer {
+    background-color: grey;
 }
+
+.containerfooter {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
 .kolomfooter{
   width: 400px;
   display: inline-block;
   align-items: center;
   text-align: center;
-
 }
-.kolomfooter img{
+
+.kolomfooter img {
   width: 25%;
   height: 25%;
 }
-.uren{
+
+.uren {
   text-align: center;
 }
-.contact h3{
+
+.contact h3 {
   font-weight: bold;
 }
