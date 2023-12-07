@@ -93,6 +93,11 @@ h1 {
 
 /*gdpr*/
 
+h6 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
 /*footer*/
 
 footer {
