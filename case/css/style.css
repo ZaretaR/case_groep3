@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*header*/
+
+.container {
+    width: 1200px;
+}
+
+header {
+    background-color: white;
+    height: 20vh;
+    position: relative;
+}
+
+.navbar {
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 10vh;
+    font-size: 18px;
+}
+
+nav {
+    text-align: right;
+}
+
+.logo {
+    margin-left: 50px;
+    font-weight: 800;
+    cursor: default;
+}
+
+nav ul {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: pink;
+    font-weight: 800;
+}
+
+.achtergrond {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    align-self: center;
+}
+
+/*over ons*/
+
+.container {
+    height: 100vh;
+    background-color: white;
+}
+
+h1 {
+    margin-top: 50px;
+    color: black;
+}
+
+/*menu*/
+
+/*media*/
+
+/*contact*/
+
+/*gdpr*/
+
+/*footer*/
+.containerfooter{
+  width: 100%;
+  display: flex;
+  background-color: grey;
+}
+.kolomfooter{
+  width: 400px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+}
+.kolomfooter img{
+  width: 25%;
+  height: 25%;
+}
+.uren{
+  text-align: center;
+}
+.contact h3{
+  font-weight: bold;
+}
