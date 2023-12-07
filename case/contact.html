@@ -36,7 +36,78 @@
 
             </div>
             <div class="formulier">
-
+                <form action="validatie/met/java.php" id="reserveer">
+                    <div>
+                      <label for="naam">Naam</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                      <label for="email">E-mail</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                      <label for="datum">Datum</label>
+                        <input type="text">
+                      <label for="uur">Uur</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                      <label for="gelegenheid">Gelegenheid</label>
+                        <select name="gelegenheid" id="gelegenheid">
+                          <option value="geen">geen</option>
+                          <option value="verjaardag">Verjaardag</option>
+                          <option value="babyshower">Baby Shower</option>
+                          <option value="bachelorette">Bachelorette</option>
+                          <option value="schoolevenement">Schoolevenement</option>
+                        </select>
+                      <label for="aantalpersonen">Aantal personen</label>
+                        <select name="aantalpersonen" id="aantalpersonen">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                        </select>
+                    </div>
+                    <div>
+                      <label for="bericht">Bericht</label>
+                      <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
+                    </div>
+                    <div>
+                      <input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur()" />
+                    </div>
+                  </form>
+                
+                  <form action="" id="vrage">
+                    <div>
+                      <label for="naam">Naam</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                      <label for="email">E-mail</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                      <label for="bericht">Bericht</label>
+                      <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
+                    </div>
+                    <div>
+                      <input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur()" />
+                    </div>
+                  </form>
+                
+                  <a href="#" >reserveren</a>
+                  <a href="#" >vragen</a>
             </div>
 
         </div>
