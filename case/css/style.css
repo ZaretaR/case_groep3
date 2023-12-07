@@ -113,3 +113,14 @@ footer {
 .contact h3 {
   font-weight: bold;
 }
+/* voor mediapagina */
+.verzameling{
+    position: inline-block;
+}
+.verzameling:nth-child(1){
+    float: left;
+}
+.verzameling:nth-child(2){
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
