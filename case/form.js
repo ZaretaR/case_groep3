@@ -2,7 +2,7 @@
 
 
 
-let acc = document.getElementsByClassName("accordion");
+let acc = document.getElementsByClassName("accordon");
 let i;
 
 for (i = 0; i < acc.length; i++) {

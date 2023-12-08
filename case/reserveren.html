@@ -28,44 +28,51 @@
   <form action="validatie/met/java.php" id="reserveer">
       <div>
         <label for="naam">Naam</label>
-          <input type="text">
+          <input type="text" id="naam">
+          <span class="error" id="naam_error"></span>
       </div>
       <div>
         <label for="email">E-mail</label>
-          <input type="text">
+          <input type="text" id="email">
+          <span class="error" id="email_error"></span>
       </div>
       <div>
         <label for="datum">Datum</label>
-          <input type="text">
+          <input type="text" id="datum">
+          <span class="error" id="datum_error"></span>
         <label for="uur">Uur</label>
-          <input type="text">
+          <input type="text" id="uur">
+          <span class="error" id="uur_error"></span>
       </div>
       <div>
         <label for="gelegenheid">Gelegenheid</label>
           <select name="gelegenheid" id="gelegenheid">
-            <option value="geen">geen</option>
-            <option value="verjaardag">Verjaardag</option>
-            <option value="babyshower">Baby Shower</option>
-            <option value="bachelorette">Bachelorette</option>
-            <option value="schoolevenement">Schoolevenement</option>
+            <span class="error" id="gelegenheid"></span>
+            <option value="geen" id="geen">geen</option>
+            <option value="verjaardag" id="verjaardag">Verjaardag</option>
+            <option value="babyshower" id="babyshower">Baby Shower</option>
+            <option value="bachelorette" id="bachelorette">Bachelorette</option>
+            <option value="schoolevenement" id="schoolevenement">Schoolevenement</option>
           </select>
         <label for="aantalpersonen">Aantal personen</label>
           <select name="aantalpersonen" id="aantalpersonen">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
+            <span class="error" id="aantalpersonen_error"></span>
+            <option value="1" id="1">1</option>
+            <option value="2" id="2">2</option>
+            <option value="3" id="3">3</option>
+            <option value="4" id="4">4</option>
+            <option value="5" id="5">5</option>
+            <option value="6" id="6">6</option>
+            <option value="7" id="7">7</option>
+            <option value="8" id="8">8</option>
+            <option value="9" id="9">9</option>
+            <option value="10" id="10">10</option>
+            <option value="11" id="11">11</option>
+            <option value="12" id="12">12</option>
+            <option value="13" id="13">13</option>
+            <option value="14" id="14">14</option>
+            <option value="15" id="15">15</option>
+
           </select>
       </div>
       <div>
@@ -73,7 +80,7 @@
         <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
       </div>
       <div>
-        <input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur()" />
+        <input type="button" value="Verstuur" id="verstuur" onclick="verstuur()" />
       </div>
     </form>
   
