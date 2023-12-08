@@ -141,6 +141,7 @@ h1 {
 .tekst_over{
     width: 600px;
     text-align: left;
+    margin-left: 150px;
 }
 
 /*menu*/
