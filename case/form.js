@@ -1,14 +1,4 @@
-<<<<<<< HEAD
 "use strict"
-=======
-
-
-
-var naam = prompt('Geef je naam in');
-var email = prompt('geef je mail in');
-var acc = document.getElementsByClassName("accordion");
-var i;
->>>>>>> 2cea4ddd3278f75c89051532402546e1203c574a
 
 let naamTxt;
 let emailTxt;
@@ -27,7 +17,6 @@ function controleerVoorwaardenNaam(){
         document.getElementById("naam_error").innerHTML="";
     }
 }
-<<<<<<< HEAD
 
 function controleerVoorwaardenEmail(){
     if(emailTxtTxt.length < 2 ){
@@ -40,5 +29,3 @@ function controleerVoorwaardenEmail(){
 }
 
 
-=======
->>>>>>> 2cea4ddd3278f75c89051532402546e1203c574a
