@@ -64,10 +64,21 @@ a:hover {
 
 /*reserveren*/
 
-.formulier {
-
+.accordion {
+ background-color: #eee;
+ color: black;
+ cursor: pointer;
+ width: 100%;
+ border: 8px solid black;
+ transition: 0.5s;
 }
-
+.accordion:hover{
+    background-color: #ccc;
+}
+.panel{
+    background-color: grey;
+    overflow: hidden;
+}
 /*home*/
 
 h1 {
