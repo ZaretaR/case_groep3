@@ -1,23 +1,31 @@
-<<<<<<< HEAD
-var naam = prompt('Geef je naam in');
-var email = prompt('geef je mail in');
-=======
-var acc = document.getElementsByClassName("accordion");
-var i;
+"use strict"
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+let naamTxt;
+let emailTxt;
+let datumTxt;
+let uurTxt;
+let gelegeenheidTxt;
+let aantalpersonenTxt;
+let allesJuistIngevuld=true;
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+function controleerVoorwaardenNaam(){
+    if(naamTxt.length < 2 ){
+        document.getElementById("naam_error").innerHTML="Minstens 2 karakters lang!";
+            allesCorrectIngevuld = false;
     }
-  });
+    else{
+        document.getElementById("naam_error").innerHTML="";
+    }
 }
->>>>>>> 851def7ec8c89f7ea32f614d3d118273721c2f94
+
+function controleerVoorwaardenEmail(){
+    if(emailTxtTxt.length < 2 ){
+        document.getElementById("email_error").innerHTML="Minstens 2 karakters lang!";
+            allesCorrectIngevuld = false;
+    }
+    else{
+        document.getElementById("email_error").innerHTML="";
+    }
+}
+
+
