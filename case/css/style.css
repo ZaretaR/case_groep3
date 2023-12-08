@@ -71,13 +71,13 @@ a:hover {
  color: black;
  cursor: pointer;
  width: 100%;
- border: 8px solid black;
+ border: none;
  transition: 0.5s;
 }
 .accordion:hover{
     background-color: #ccc;
 }
-.panel{
+.panel {
     background-color: grey;
     overflow: hidden;
 }
