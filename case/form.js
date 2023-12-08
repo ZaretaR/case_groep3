@@ -1,10 +1,9 @@
 
 
 
-var naam = prompt('Geef je naam in');
-var email = prompt('geef je mail in');
-var acc = document.getElementsByClassName("accordion");
-var i;
+
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -21,3 +20,34 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+let voornaamTxt;
+function controleerVoorwaardenVoornaam(){
+  if(voornaamTxt.length < 2 ){
+    document.getElementById("voornaam_error").innerHTML="Minstens 2 karakters lang!";
+    allesCorrectIngevuld = false;
+  }
+  else{
+    document.getElementById("voornaam_error").innerHTML="";
+  }
+};
+
+function verstuur(){ 
+    voornaamTxt=document.getElementById("voornaam").value;
+
+    allesCorrectIngevuld=true;
+        //als er op de knop geklikt wordt, moet het bijhouden van de fouten gereset worden
+    telSelectedWinToestel=0;
+
+    if(voornaamTxt.length==0){
+      document.getElementById("voornaam_error").innerHTML="Vul in a.u.b.";
+      allesCorrectIngevuld = false;
+    }
+    else{
+      //aparte functie aanmaken om de voorwaarden te controleren
+      controleerVoorwaardenVoornaam()
+    }
+    if(allesCorrectIngevuld){
+      document.write("Naam is correct ingevuld");
+    }
+  };
