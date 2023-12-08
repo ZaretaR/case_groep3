@@ -122,15 +122,10 @@ a:hover {
 .slides-nav a:hover {
 	opacity: 1;
 }
-
-/*over ons*/
-
-h1 {
-    color: black;
-}
-.tekst_over{
-    width: 600px;
+.introtekst{
+    width: 980px;
     text-align: left;
+    margin-left: 150px;
 }
 
 /*menu*/
