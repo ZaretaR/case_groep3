@@ -25,38 +25,43 @@
 </header>
 
 <div class="formulier">
-  <form action="validatie/met/java.php" id="reserveer">
-      <div>
-        <label for="naam">Naam</label>
-          <input type="text" id="naam">
+  <form action="/" id="form-reserveer">
+        <div class="input-control">
+          <label>Naam</label>
+          <input id="naam" name="naam" type="text">
           <span class="error" id="naam_error"></span>
       </div>
-      <div>
-        <label for="email">E-mail</label>
-          <input type="text" id="email">
+
+      <div class="input-control">
+          <label>Email</label>
+          <input id="email" name="email" type="text">
           <span class="error" id="email_error"></span>
       </div>
-      <div>
-        <label for="datum">Datum</label>
-          <input type="text" id="datum">
-          <span class="error" id="datum_error"></span>
-        <label for="uur">Uur</label>
-          <input type="text" id="uur">
-          <span class="error" id="uur_error"></span>
+
+      <div class="input-control">
+        <label>Datum</label>
+        <input id="datum" name="datum" type="text">
+        <span class="error" id="datum_error"></span>
+        <label>Uur</label>
+        <input id="uur" name="uur" type="text">
+        <span class="error" id="uur_error"></span>
       </div>
-      <div>
+
+      <div class="input-control">
         <label for="gelegenheid">Gelegenheid</label>
           <select name="gelegenheid" id="gelegenheid">
-            <span class="error" id="gelegenheid"></span>
+            <option value=""></option>
             <option value="geen" id="geen">geen</option>
             <option value="verjaardag" id="verjaardag">Verjaardag</option>
             <option value="babyshower" id="babyshower">Baby Shower</option>
             <option value="bachelorette" id="bachelorette">Bachelorette</option>
             <option value="schoolevenement" id="schoolevenement">Schoolevenement</option>
           </select>
-        <label for="aantalpersonen">Aantal personen</label>
-          <select name="aantalpersonen" id="aantalpersonen">
-            <span class="error" id="aantalpersonen_error"></span>
+          <span class="error" id="gelegenheid"></span>
+          
+        <label for="personen">Aantal personen</label>
+          <select name="personen" id="personen">
+            <option value=""></option>
             <option value="1" id="1">1</option>
             <option value="2" id="2">2</option>
             <option value="3" id="3">3</option>
@@ -72,22 +77,22 @@
             <option value="13" id="13">13</option>
             <option value="14" id="14">14</option>
             <option value="15" id="15">15</option>
-
           </select>
+          <span class="error" id="personen"></span>
+      </div><br>
+
+      <div class="input-control">
+          <label>Bericht</label><br>
+          <textarea name="bericht" id="" cols="30" rows="10"></textarea>
       </div>
-      <div>
-        <label for="bericht">Bericht</label>
-        <textarea name="bericht" id="bericht" cols="30" rows="10">Zet uw bericht</textarea>
-      </div>
-      <div>
-        <input type="button" value="Verstuur" id="verstuur" onclick="verstuur()" />
-      </div>
+      
+      <button type="submit">Verstuur</button>
     </form>
   
     <footer>
       <div class="containerfooter">
           <div class="kolomfooter">
-              <img src="images/mokkalogo.png" alt="logo van Mokka Lounge">
+              <img src="images/LOGO.png" alt="logo van Mokka Lounge">
               <p><a href="gdpr.html">GDPR & Privacy regelementering</a></p>
           </div>
 
@@ -99,21 +104,21 @@
               
               <div class="contact">
                   <h3>Sociale media</h3>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.facebook.com/mokkaloungeheusden/?locale=nl_NL"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/mokkaloungeheusden/"><i class="fa-brands fa-instagram"></a></i>
               </div>
           </div>
           
           <div class="kolomfooter">
               <div class="uren">
                   <h3>Openingsuren</h3>
-                  <p>ma <strong>Gesloten</strong></p>
-                  <p>di - do <strong>12:00–00:00</strong></p>
-                  <p>vr - za <strong>12:00–01:00</strong></p>
-                  <p>zo <strong>14:00–23:00</strong></p>
+                  <p>ma: <strong>Gesloten</strong></p>
+                  <p>di - do: <strong>12:00–00:00</strong></p>
+                  <p>vr - za: <strong>12:00–01:00</strong></p>
+                  <p>zo: <strong>14:00–23:00</strong></p>
               </div>
           </div>
       </div>
-    </footer>
+</footer>
 </body>
 </html>

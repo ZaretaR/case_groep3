@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
 }
 
 html {
@@ -17,7 +18,13 @@ html {
 	padding: 20px 0;
 }
 
+
 /*header*/
+
+li:nth-child(1) {
+    color: #E1415E;
+    font-weight: 800;
+}
 
 .navbar {
     width: 1200px;
@@ -25,12 +32,14 @@ html {
     display: flex;
     gap: 20px;
     padding: 30px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .logo {
     width: 200px;
+    font-weight: 800;
     cursor: pointer;
+    font-family: "Cinzel Decorative";
 }
 
 nav {
@@ -58,39 +67,110 @@ a:hover {
 }
 
 .achtergrond {
-    position: relative;
     display: flex;
     height: 100vh;
     align-self: center;
 }
 
+.introtekst {
+    padding-top: 50px;
+    background-color: white;
+    height: 100vh;
+}
+
 /*reserveren*/
 
-.accordion {
- background-color: #eee;
- color: black;
- cursor: pointer;
- width: 100%;
- border: none;
- transition: 0.5s;
+form-reserveer {
+    display: flex;
+    width: 1000px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 12px;
 }
-.accordion:hover{
-    background-color: #ccc;
+
+form-reserveer button {
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    background-color: rgb(92, 21, 49);
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
 }
-.panel {
-    background-color: grey;
-    overflow: hidden;
+
+form-reserveer button:hover {
+    background-color: #ff3860;
 }
+
+.input-control select {
+    border: 2px solid #f0f0f0;
+	border-radius: 5px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+	width: 45%;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 5px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+	width: 95%;
+}
+
+.input-control.success input {
+    border-color: green;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+
+.input-control .error {
+    padding-top: 5px;
+    color: red;
+    font-size: 12px;
+    height: 13px;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+    margin-top: 5px;
+	padding: 10px;
+	width: 95%;
+}
+
 /*home*/
+
+.introtekst {
+    margin: auto;
+    text-align: center;
+    width: 65%;
+}
 
 h1 {
     color: black;
+    padding: 0;
 }
 
-.tekst_over {
-    width: 600px;
-    text-align: left;
-    margin-left: 150px;
+h2 {
+    padding: 0;
+}
+
+.introtekst p {
+    padding-top: 10px;
 }
 
 blockquote {
@@ -99,12 +179,16 @@ blockquote {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 0px;
+    color: #E1415E;
+    font-weight: 800;
+    font-family: "Cinzel Decorative";
 }
 
 cite {
-    padding-top: 0px;
     font-size: 20px;
-    padding-bottom: 30px;
+    font-size: 20px;
+    color: #E1415E;
+    font-family: "Cinzel Decorative";
 }
 
 .slides-wrapper img {
@@ -138,7 +222,6 @@ cite {
 }
 
 .slides img {
-
 	scroll-snap-align: start;
 	object-fit: cover;
 }
@@ -172,6 +255,22 @@ cite {
 
 /*menu*/
 
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    transition: 0.5s;
+   }
+   .accordion:hover{
+       background-color: #ccc;
+   }
+   .panel {
+       background-color: grey;
+       overflow: hidden;
+   }
+
 /*media*/
 
 .galerij {
@@ -188,6 +287,78 @@ cite {
     position: relative;
 }
 
+.maps p {
+    font-weight: 800;
+    text-align: center;
+    font-size: 18px;
+}
+
+form {
+    margin-left: 5%;
+    width: 400px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    background-color: rgb(92, 21, 49);
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+form button:hover {
+    background-color: #ff3860;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 5px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+	width: 95%;
+}
+
+.input-control.success input {
+    border-color: green;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+
+.input-control .error {
+    padding-top: 5px;
+    color: red;
+    font-size: 12px;
+    height: 13px;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+    margin-top: 5px;
+	font-size: 12px;
+	padding: 10px;
+	width: 95%;
+}
+
 /*gdpr*/
 
 h6 {
@@ -198,33 +369,54 @@ h6 {
 /*footer*/
 
 footer {
-    background-color: grey;
+    background-color: #0E0E0E;
 }
 
 .containerfooter {
-  width: 1200px;
-  margin: auto;
-  display: flex;
-  gap: 20px;
-  padding: 30px;
+    color: white;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
 }
 
 .kolomfooter{
-  width: 400px;
-  display: inline-block;
-  align-items: center;
-  text-align: center;
+    width: 400px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
 }
 
 .kolomfooter img {
-  width: 25%;
-  height: 25%;
+    width: 25%;
+    height: 25%;
 }
 
 .uren {
-  text-align: center;
+    text-align: center;
 }
 
 .contact h3 {
-  font-weight: bold;
+    font-weight: bold;
+    color: #E1415E;
+    font-size: 20px;
+}
+
+i {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.kolomfooter a {
+    color: white;
+}
+
+.kolomfooter a:hover {
+    color: #E1415E;
+}
+
+.uren h3 {
+    font-size: 20px;
+    color: #E1415E ;
 }

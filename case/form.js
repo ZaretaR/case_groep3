@@ -3,34 +3,159 @@
 let acc = document.getElementsByClassName("accordon");
 let i;
 
-function controleerVoorwaardenNaam(){
-    if(naamTxt.length < 2 ){
-        document.getElementById("naam_error").innerHTML="Minstens 2 karakters lang!";
-            allesCorrectIngevuld = false;
+let naamTxt;
+let emailTxt;
+let datumTxt;
+let uurTxt;
+let geselecteerdeGelegeneheid;
+let gelegenheidTxt;
+let geselecteerdePersonen;
+let personenTxt;
+let allesCorrectIngevuld=true;
+
+/*functie verstuur*/ 
+
+function verstuur() {
+    naamTxt=document.getElementById("naam").value;
+    allesCorrectIngevuld=true;
+
+    if(naamTxt.length==0) {
+        document.getElementById("naam_error").innerHTML="Naam is verplicht!";
+        allesCorrectIngevuld = false;
+    }else {
+        controleerVoorwaardenNaam ()
     }
-    else{
+    if(allesCorrectIngevuld) {
+        document.write("");
+    }
+
+
+    emailTxt=document.getElementById("email").value;
+
+    if(emailTxt.length==0) {
+        document.getElementById("email_error").innerHTML="Email is verplicht!";
+        allesCorrectIngevuld = false;
+    } else {
+        controleerVoorwaardenEmail ();
+    }
+
+
+    datumTxt=document.getElementById("datum").value;
+    allesCorrectIngevuld=true;
+
+    if(datumTxt.length > 6) {
+        document.getElementById("datum_error").innerHTML="Datum is verplicht!";
+        allesCorrectIngevuld = false;
+    }else {
+        controleerVoorwaardenDatum ()
+    }
+    if(allesCorrectIngevuld) {
+        document.write("");
+    }
+
+
+    uurTxt=document.getElementById("uur").value;
+    allesCorrectIngevuld=true;
+
+    if(uurTxt.length > 2) {
+        document.getElementById("uur_error").innerHTML="Uur is verplicht!";
+        allesCorrectIngevuld = false;
+    }else {
+        controleerVoorwaardenUur ()
+    }
+    if(allesCorrectIngevuld) {
+        document.write("");
+    }
+
+
+    geselecteerdeGelegeneheid=document.getElementById("gelegenheid").selectedIndex;
+    gelegenheidTxt=document.getElementById("gelegenheid").value;
+
+    if(geselecteerdeGelegeneheid==0) {
+      document.getElementById("gelegenheid_error").innerHTML="Kies een gelegenheid";
+      allesCorrectIngevuld = false;
+    }else {
+      document.getElementById("gelegenheid_error").innerHTML="";
+    }
+
+
+    geselecteerdeGelegeneheid=document.getElementById("personen").selectedIndex;
+    gelegenheidTxt=document.getElementById("personen").value;
+
+    if(geselecteerdePersonen==0) {
+      document.getElementById("personen_error").innerHTML="Kies de aantal personen";
+      allesCorrectIngevuld = false;
+    }else {
+      document.getElementById("personen_error").innerHTML="";
+    }
+}
+
+/*functie controle*/ 
+
+function controleerVoorwaardenNaam() {
+    if(naamTxt.length < 2) {
+        document.getElementById("naam_error").innerHTML="Minstens 2 karakters lang!";
+        allesCorrectIngevuld = false;
+    }else {
         document.getElementById("naam_error").innerHTML="";
     }
 }
 
-function controleerVoorwaardenEmail(){
-    if(emailTxtTxt.length < 2 ){
-        document.getElementById("email_error").innerHTML="Minstens 2 karakters lang!";
-            allesCorrectIngevuld = false;
-    }
-    else{
+function controleerVoorwaardenEmail() {
+    let regEx = /^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
+
+    if(regEx.test(emailTxt) == false) {
+        document.getElementById("email_error").innerHTML="Vul een correcte email in!";
+
+        allesCorrectIngevuld = false;
+    }else {
         document.getElementById("email_error").innerHTML="";
     }
-  };
+}
 
-let voornaamTxt;
-function controleerVoorwaardenVoornaam(){
-  if(voornaamTxt.length < 2 ){
-    document.getElementById("voornaam_error").innerHTML="Minstens 2 karakters lang!";
-    allesCorrectIngevuld = false;
+function controleerVoorwaardenDatum() {
+  if(datumTxt.length < 6) {
+      document.getElementById("datum_error").innerHTML="Minstens 6 karakters lang!";
+      allesCorrectIngevuld = false;
+  }else {
+      document.getElementById("datum_error").innerHTML="";
   }
-  else{
-    document.getElementById("voornaam_error").innerHTML="";
+}
+
+function controleerVoorwaardenUur() {
+  if(uurTxt.length < 4) {
+      document.getElementById("uur_error").innerHTML="Minstens 4 karakters lang!";
+      allesCorrectIngevuld = false;
+  }else {
+      document.getElementById("uur_error").innerHTML="";
   }
-};
+}
+
+/*Moest gelegenheid en personen hier ook?*/
+
+/*Versturen als correct*/ 
+
+if(allesCorrectIngevuld) {
+    let link = "mailto:" + encodeURIComponent("zareta.rasaeva@gmail.com")
+    +"subject=" + encodeURIComponent("Formulier validatie")
+    + "naam"
+    + encodeURIComponent(naamTxt)
+    + encodeURIComponent("\r\n\n")
+    + "email"
+    + encodeURIComponent(emailTxt)
+    + encodeURIComponent("\r\n\n")
+    + "datum"
+    + encodeURIComponent(datumTxt)
+    + encodeURIComponent("\r\n\n")
+    + "uur"
+    + encodeURIComponent(uurTxt)
+    + encodeURIComponent("\r\n\n")
+    + "gelegenheid"
+    + encodeURIComponent(gelegenheidTxt)
+    + encodeURIComponent("\r\n\n")
+    + "personen"
+    + encodeURIComponent(gelegenheidTxt)
+    + encodeURIComponent("\r\n\n")
+    /*window.location.href = link;*/
+}
 
