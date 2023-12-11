@@ -17,10 +17,25 @@ html {
 	gap: 20px;
 	padding: 20px 0;
 }
-
+.container:nth-child(2){
+    margin-top: 120px;
+}
 
 /*header*/
-
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+}
+.transparent{
+    background-color: #F2E0C9;
+}
+.solid{
+    background-color: #731212;
+}
 li:nth-child(1) {
     color: #E1415E;
     font-weight: 800;
@@ -102,6 +117,12 @@ form-reserveer button {
 
 form-reserveer button:hover {
     background-color: #ff3860;
+}
+.formulier{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-control select {
@@ -255,30 +276,12 @@ cite {
 
 /*menu*/
 
-.accordion {
-    background-color: #eee;
-    color: black;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    transition: 0.5s;
-   }
-   .accordion:hover{
-       background-color: #ccc;
-   }
-   .panel {
-       background-color: grey;
-       overflow: hidden;
-   }
 
 /*media*/
 
-.galerij {
-    flex-direction: row;
-}
-
 .galerij img {
     margin: 8px;
+    border-radius: 25px;
 }
 
 /*contact*/

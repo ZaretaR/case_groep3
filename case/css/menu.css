@@ -1,0 +1,174 @@
+/* algemeen */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+width: 1200px;
+margin: auto;
+display: flex;
+gap: 20px;
+padding: 20px 0;
+}
+.container:nth-child(2){
+  margin-top: 120px;
+}
+/* header */
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+.transparent{
+  background-color: #F2E0C9;
+}
+.solid{
+  background-color: #731212;
+}
+.navbar {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+}
+
+nav {
+  text-align: right;
+  width: 1000px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #E1415E;
+  font-weight: 800;
+}
+
+.achtergrond {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-self: center;
+}
+/* accordeon */
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+ }
+ .accordion li{
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #F2E0C9;
+  color: #731212;
+  box-shadow: 6px 6px 10px -1px;
+  align-items: center;
+ }
+ .accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+ }
+ label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 1.5s;
+ }
+ input[type="checkbox"]{
+  display: none;
+ }
+ .accordion .content{
+  color: grey;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+ }
+ input[type="checkbox"]:checked + label + .content{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+ }
+ input[type="checkbox"]:checked + label::before{
+  content: '-';
+  padding-left: 100px;
+  transition: 1.5s;
+ }
+ content p{
+  justify-content: space-between;
+ }
+ /* footer */
+footer {
+  background-color: grey;
+}
+
+.containerfooter {
+width: 1200px;
+margin: auto;
+display: flex;
+gap: 20px;
+padding: 30px;
+}
+
+.kolomfooter{
+width: 400px;
+display: inline-block;
+align-items: center;
+text-align: center;
+}
+
+.kolomfooter img {
+width: 25%;
+height: 25%;
+}
+
+.uren {
+text-align: center;
+}
+
+.contact h3 {
+font-weight: bold;
+}
+.achtergrond {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-self: center;
+}

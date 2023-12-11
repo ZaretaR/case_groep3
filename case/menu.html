@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="form.js"></script>
+    <script src="form.js" defer></script>
     
     <title>menu</title> 
 </head>
 <body>
 
-    <header>
+    <header id="myHeader" class="transparent">
         <div class="container">
             <div class="navbar">
                 <div class="logo"><a href="index.html">Mokka Lounge</a></div>
@@ -27,34 +27,46 @@
             </div>
     </header>
 
-    <div class="menu">
-        <div class="container">
-            <div class="menukaart">
-                <button class="accordion">Voorgerecht</button>
-                <div class="panel">
-                    <h2>Voorgerechten</h2>
+    <div class="container">
+        <div class="menu">
+            <ul class="accordion">
+                <li>
+                <input type="checkbox" name="accordion" id="first">
+                <label for="first">Voorgerechten</label>
+                <div class="content">
+                    <ul>
+                        <li>salade-15 euro</li>
+                    </ul>
+                    <ul>
+                        <li>salade</li>
+                        <li>15 euro</li>
+                    </ul>
+                    <p>Salade                                       15 euro</p>
+                    <p>soep-10 euro</p>
                 </div>
-                <button class="accordion">Hoofdgerecht</button>
-                <div class="panel">
-                    <h2>Hoofdgerechten</h2>
+                </li>
+                <li>
+                <input type="checkbox" name="accordion" id="second">
+                <label for="second">Hoofdgerechten</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore reprehenderit iure dolor. Recusandae error ea dolorem, eveniet libero assumenda in doloremque similique ipsum saepe, labore rem magni veritatis deleniti minima odit eos explicabo corporis temporibus fugit culpa! Modi nihil recusandae iusto fugiat ratione accusantium sunt, placeat quos reprehenderit expedita nemo vitae eaque quas aliquam nesciunt maiores temporibus quam ad voluptatum. Deserunt provident consequuntur laborum omnis temporibus. Libero eius asperiores dolor debitis enim! Reiciendis itaque, hic eveniet earum repudiandae architecto quas, perspiciatis minus dolore dolores autem tenetur placeat rem, totam dolor nam dignissimos eius ex </p>
                 </div>
-                <button class="accordion">Desserten</button>
-                <div class="panel">
-                    <h2>Desserten</h2>
+                </li>
+                <li>
+                <input type="checkbox" name="accordion" id="third">
+                <label for="third">Desserten</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore reprehenderit iure dolor. Recusandae error ea dolorem, eveniet libero assumenda in doloremque similique ipsum saepe, labore rem magni veritatis deleniti minima odit eos explicabo corporis temporibus fugit culpa! Modi nihil recusandae iusto fugiat ratione accusantium sunt, placeat quos reprehenderit expedita nemo vitae eaque quas aliquam nesciunt maiores temporibus quam ad voluptatum. Deserunt provident consequuntur laborum omnis temporibus. Libero eius asperiores dolor debitis enim! Reiciendis itaque, hic eveniet earum repudiandae architecto quas, perspiciatis minus dolore dolores autem tenetur placeat rem, totam dolor nam dignissimos eius ex </p>
                 </div>
-                <button class="accordion">Dranken</button>
-                <div class="panel">
-                    <h2>Dranken</h2>
+                </li>
+                <li>
+                <input type="checkbox" name="accordion" id="fourth">
+                <label for="fourth">Dranken</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore reprehenderit iure dolor. Recusandae error ea dolorem, eveniet libero assumenda in doloremque similique ipsum saepe, labore rem magni veritatis deleniti minima odit eos explicabo corporis temporibus fugit culpa! Modi nihil recusandae iusto fugiat ratione accusantium sunt, placeat quos reprehenderit expedita nemo vitae eaque quas aliquam nesciunt maiores temporibus quam ad voluptatum. Deserunt provident consequuntur laborum omnis temporibus. Libero eius asperiores dolor debitis enim! Reiciendis itaque, hic eveniet earum repudiandae architecto quas, perspiciatis minus dolore dolores autem tenetur placeat rem, totam dolor nam dignissimos eius ex </p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="accordion">
-        <div class="contentacc">
-            <div class="label">Voorgerechten
-                
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
 

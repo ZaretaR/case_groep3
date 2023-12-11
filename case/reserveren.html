@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="form.js"></script>
+    <script src="form.js" defer></script>
   <title>Reserveren</title>
 </head>
 <body>
 
-  <header>
+  <header id="myHeader" class="transparent">
     <div class="navbar">
         <div class="logo"><a href="index.html">Mokka Lounge</a></div>
             <nav>    
@@ -80,7 +80,6 @@
           </select>
           <span class="error" id="personen"></span>
       </div><br>
-
       <div class="input-control">
           <label>Bericht</label><br>
           <textarea name="bericht" id="" cols="30" rows="10"></textarea>
@@ -88,7 +87,7 @@
       
       <button type="submit">Verstuur</button>
     </form>
-  
+  </div>  
     <footer>
       <div class="containerfooter">
           <div class="kolomfooter">

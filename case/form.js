@@ -1,7 +1,17 @@
 "use strict"
 
-let acc = document.getElementsByClassName("accordon");
-let i;
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('myHeader');
+    const scrollPos = window.scrollY;
+  
+    if (scrollPos > 600) { // Change 100 to the scroll position when you want the change to occur
+        header.classList.add('solid');
+        header.classList.remove('transparent');
+    } else {
+        header.classList.remove('solid');
+        header.classList.add('transparent');
+    }
+  });
 
 let naamTxt;
 let emailTxt;
@@ -156,6 +166,6 @@ if(allesCorrectIngevuld) {
     + "personen"
     + encodeURIComponent(gelegenheidTxt)
     + encodeURIComponent("\r\n\n")
-    /*window.location.href = link;*/
+    /* window.location.href = link;*/
 }
 
