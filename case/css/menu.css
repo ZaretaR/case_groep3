@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Delius&family=Prompt:wght@100;400;800&family=Raleway:wght@100;400;800&family=Whisper&display=swap');
 /* algemeen */
 body {
   margin: 0;
@@ -17,6 +18,24 @@ padding: 20px 0;
 }
 .container:nth-child(2){
   margin-top: 120px;
+}
+h1{
+  margin-top: 150px;
+  margin-left: 740px;
+  font-family: 'Cinzel Decorative', serif;
+}
+.menu h2{
+  font-family: 'Whisper', serif;
+  font-size: 45px;
+}
+.menu p{
+  font-family: 'Raleway', sans-serif;
+}
+.menu h3{
+  font-family: 'Raleway', sans-serif;
+}
+.menu label{
+  font-family: 'Raleway', sans-serif;
 }
 /* header */
 header{
@@ -81,19 +100,19 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 150px;
 }
 .accordion{
   margin: 60px auto;
-  width: 100%;
  }
  .accordion li{
   list-style: none;
-  width: 100%;
+  width: 800px;
   margin: 20px;
   padding: 10px;
   border-radius: 8px;
   background-color: #F2E0C9;
-  color: #731212;
+  color: #261414;
   box-shadow: 6px 6px 10px -1px;
   align-items: center;
  }
@@ -115,7 +134,7 @@ a:hover {
   display: none;
  }
  .accordion .content{
-  color: grey;
+  color: #261414;
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
@@ -123,16 +142,13 @@ a:hover {
   transition: max-height 0.5s, padding 0.5s;
  }
  input[type="checkbox"]:checked + label + .content{
-  max-height: 400px;
+  max-height: 1800px;
   padding: 10px 10px 20px;
  }
  input[type="checkbox"]:checked + label::before{
   content: '-';
   padding-left: 100px;
   transition: 1.5s;
- }
- content p{
-  justify-content: space-between;
  }
  /* footer */
 footer {
