@@ -228,16 +228,19 @@ video {
     margin:auto;
 }
 
-.button-nieuwsbrief {
+.nieuwsbrief button {
+    margin-top: 25px;
     width: 350px;
     padding: 15px;
     border-radius: 5px;
     font-weight: 800;
     background-color: #E1415E;
+    border: none;
+    color: white;
     font-size: 18px;
 }
 
-.button-nieuwsbrief:hover {
+.nieuwsbrief button:hover {
     cursor: pointer;
     background-color: rgb(92, 21, 49);
     color: white;
