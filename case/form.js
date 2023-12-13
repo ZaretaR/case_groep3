@@ -21,6 +21,7 @@ window.addEventListener('scroll', function() {
   let gelegenheidTxt;
   let geselecteerdePersonen;
   let personenTxt;
+  let berichtTxt;
   let allesCorrectIngevuld;
   
   /*functie controle*/ 
@@ -75,6 +76,7 @@ window.addEventListener('scroll', function() {
       geselecteerdeGelegenheid=document.getElementById("gelegenheid").selectedIndex;
       personenTxt=document.getElementById("personen").value;
       geselecteerdePersonen=document.getElementById("personen").selectedIndex;
+      berichtTxt=document.getElementById("bericht").value;
       allesCorrectIngevuld=true;
       if(naamTxt.length==0) {
           document.getElementById("naam_error").innerHTML="Naam is verplicht!";
@@ -135,9 +137,74 @@ window.addEventListener('scroll', function() {
         + "Aantal Personen: "
         + encodeURIComponent(personenTxt)
         + encodeURIComponent("\r\n\n")
+        + "Bericht: "
+        + encodeURIComponent(berichtTxt)
+        + encodeURIComponent("\r\n\n")
         window.location.href = link;
       }
     };
+
+    let naamContactTxt;
+    let emailContactTxt;
+    let berichtContactTxt;
+    let contactCorrectIngevuld;
+    
+    function controleerVoorwaardenNaamContact() {
+        if(naamContactTxt.length < 2) {
+            document.getElementById("naamcontact_error").innerHTML="Minstens 2 karakters lang!";
+            contactCorrectIngevuld = false;
+        }
+        else{
+            document.getElementById("naamcontact_error").innerHTML="";
+        }
+      };
+      function controleerVoorwaardenEmailContact() {
+        let regExp=/^[A-Za-z][\.A-Za-z0-9+_-]+@[\.A-Za-z0-9-]+\.[A-Za-z]{2,20}$/;
+        if(regExp.test(emailContactTxt) == false){
+          document.getElementById("emailcontact_error").innerHTML="Dit is niet correct!";
+          contactCorrectIngevuld = false;
+        }
+        else{
+          document.getElementById("emailcontact_error").innerHTML="";
+        }	
+      };
+      function verstuurContact() {
+        naamContactTxt=document.getElementById("naamcontact").value;
+        emailContactTxt=document.getElementById("emailcontact").value;
+        berichtContactTxt=document.getElementById("berichtcontact").value;
+        contactCorrectIngevuld=true;
+    
+        if(naamContactTxt.length==0) {
+            document.getElementById("naamcontact_error").innerHTML="Naam is verplicht!";
+            contactCorrectIngevuld = false;
+        }else {
+            controleerVoorwaardenNaamContact ()
+        }
+        if(emailContactTxt.length==0) {
+          document.getElementById("emailcontact_error").innerHTML="E-mail is verplicht!";
+        }else {
+          controleerVoorwaardenEmailContact()
+        }
+        if(contactCorrectIngevuld) {
+            let link = "mailto:" + encodeURIComponent("zarflocvo_dev@hotmail.com")
+            + "?cc=" + encodeURIComponent(document.getElementById('emailcontact').value)
+            + "&subject=" + encodeURIComponent("Bevestiging van reservatie")
+            + "&body="
+            + "Melding goed ontvangen. Bedankt!"
+            + "%0D%0A"
+            + "%0D%0A"
+            + "Naam: "
+            + encodeURIComponent(naamContactTxt)
+            + encodeURIComponent("\r\n\n")
+            + "E-mail: "
+            + encodeURIComponent(emailContactTxt)
+            + encodeURIComponent("\r\n\n")
+            + "Bericht: "
+            + encodeURIComponent(berichtContactTxt)
+            + encodeURIComponent("\r\n\n")
+            window.location.href = link;
+        }
+      };
 
 /*mailchip*/
 src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">

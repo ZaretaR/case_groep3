@@ -35,19 +35,19 @@
                     <h1>Vragen</h1>
                     <div class="input-control">
                         <label>Naam</label>
-                        <input id="naam" name="naam" type="text">
-                        <span class="error" id="naam_error"></span>
+                        <span class="error" id="naamcontact_error"></span>
+                        <input id="naamcontact" name="naamcontact" type="text">
                     </div>
                     <div class="input-control">
                         <label>Email</label>
-                        <input id="email" name="email" type="text">
-                        <span class="error" id="email_error"></span>
+                        <span class="error" id="emailcontact_error"></span>
+                        <input id="emailcontact" name="emailcontact" type="text">
                     </div>
                     <div>
                         <label>Bericht</label><br>
-                        <textarea name="bericht" id="" cols="30" rows="10"></textarea>
+                        <textarea name="berichtcontact" id="berichtcontact" cols="30" rows="10"></textarea>
                     </div><br><br>
-                    <button type="submit">Verstuur</button>
+                    <input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuurContact()"/>
                 </form>
         </div>
 
