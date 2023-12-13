@@ -188,7 +188,7 @@ window.addEventListener('scroll', function() {
         if(contactCorrectIngevuld) {
             let link = "mailto:" + encodeURIComponent("zarflocvo_dev@hotmail.com")
             + "?cc=" + encodeURIComponent(document.getElementById('emailcontact').value)
-            + "&subject=" + encodeURIComponent("Bevestiging van reservatie")
+            + "&subject=" + encodeURIComponent("Vraag ontvangen")
             + "&body="
             + "Melding goed ontvangen. Bedankt!"
             + "%0D%0A"
