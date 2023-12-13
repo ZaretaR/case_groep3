@@ -13,6 +13,29 @@ window.addEventListener('scroll', function() {
     }
   });
 
+/*mailchip*/
+src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+(function($) {window.fnames = new Array(); 
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';
+    ftypes[0]='email';
+    fnames[1]='FNAME';
+    ftypes[1]='text';
+    fnames[2]='LNAME';
+    ftypes[2]='text';
+    fnames[3]='ADDRESS';
+    ftypes[3]='address';
+    fnames[4]='PHONE';
+    ftypes[4]='phone';
+    fnames[5]='BIRTHDAY';
+    ftypes[5]='birthday';
+}
+(jQuery));
+var $mcj = jQuery.noConflict(true);
+/*einde mailchip*/
+
+
+
 let naamTxt;
 let emailTxt;
 let datumTxt;
@@ -141,8 +164,6 @@ function controleerVoorwaardenUur() {
   }
 }
 
-/*Moest gelegenheid en personen hier ook?*/
-
 /*Versturen als correct*/ 
 
 if(allesCorrectIngevuld) {
@@ -164,8 +185,8 @@ if(allesCorrectIngevuld) {
     + encodeURIComponent(gelegenheidTxt)
     + encodeURIComponent("\r\n\n")
     + "personen"
-    + encodeURIComponent(gelegenheidTxt)
+    + encodeURIComponent(personenTxt)
     + encodeURIComponent("\r\n\n")
-    /* window.location.href = link;*/
+    window.location.href = link;
 }
 

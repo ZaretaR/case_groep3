@@ -3,160 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Case</title>
-    <script src="form.js" defer></script>
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        #mc_embed_signup {
-            background: #fff;
-            clear: left;
-            font: 14px Helvetica, Arial, sans-serif;
-            width: 600px;
-        }
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        /* Dit is de css van mailchimp en kan best hier blijven staan */
-    </style>
+    <script src="form.js"></script>
+    <title>Mokka Lounge</title>
 </head>
 <body>
-    
+
     <header id="myHeader" class="transparent">
         <div class="navbar">
             <div class="logo"><a href="index.html">Mokka Lounge</a></div>
-                <nav>    
-                    <ul class="keuze">
-                        <li><a href="reserveren.html">Reserveren</a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul class="keuze">
+                    <li><a href="reserveren.html">Reserveren</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="achtergrond">
-        <img src="images/achtergrondfoto.jpg" alt="achtergrondfoto">
-    </div>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="images/achtergrond1.jpg" alt="achtergrond1" />
+                <img id="slide-2" src="images/achtergrond2.jpg" alt="achtergrond2" />
+                <img id="slide-3" src="images/achtergrond3.jpg" alt="achtergrond3" />
+                <img id="slide-4" src="images/achtergrond4.jpg" alt="achtergrond4" />
+            </div>
 
-    <div class="container">
-        <div class="introtekst">
-            <h1>Welkom in MOKKA LOUNGE</h1>
-            <h2> waar wij u een onvergetelijk moment zullen verzorgen.</h2>
-            <p>Welkom bij Mokka Lounge, in het charmante hart van Heusden!
-                Na gezellig rond te wandelen en gewinkeld te hebben in Heusden Cité, kan je bij ons vertoeven in de Mokka Lounge. Gevuld met gezelligheid, zoete geur van verleidelijke lekkernijen, versgezette koffie en hartverwarmende glimlachen.</p>
+            <div class="tekst-overlay">
+                <h1>Welkom in MOKKA LOUNGE</h1>
+                <h2> waar wij u een onvergetelijk moment zullen verzorgen.</h2><br><br>
+                <a href="reserveren.html" class="button-reserveren">Reserveren</a>
+            </div>
 
-                <p>Wij trachten om meer te zijn dan zomaar een restaurant. We zouden graag een toevluchtsoord worden voor lokale levensgenieters en reizigers die de schoonheid wat Mokka lounge te bieden heeft kunnen waarderen. Hier draait alles om verhalen delen, vriendschappen smeden en momenten koesteren.</p>
-
-                <div class="quote"><blockquote>One cannot think well, love well, sleep well if one has not dined well. </blockquote><cite>- M.F.K. Fisher</cite></div>
-
-                <p>Onze gastvrije sfeer nodigt je uit om te ontspannen en te genieten van het moment met vrienden en familie. Zelfs als je langskomt voor een snelle koffie in de ochtend of voor een uitgebreide lunch in de middag, ons toegewijde team staat altijd klaar met een warme begroeting en een uitnodigende glimlach.</p>
-
-                <p>Laat je betoveren door de charme van Mokka Lounge in het hart van Heusden. Kom binnen, ontspan en word deel van ons verhaal. Hier worden herinneringen gemaakt en momenten omarmd - een kleine oase van geluk in de drukte van het dagelijkse leven.
-                </p>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
         </div>
-    </div>
 
-    <div class="slides" id="slides">
-        <div class="container">
-            <div class="slides"></div>
-                <div class="slides-wrapper">
-                    <div class="slides">
-                        <img id="slide-1" src="images/mokka.jpg" alt="mokka" />
-                        <img id="slide-2" src="images/meisjes.jpg" alt="meisjes" />
-                        <img id="slide-3" src="images/verjaardag.jpg" alt="verjaardag" />
-                        <img id="slide-4" src="images/jongens.jpg" alt="jongens" />
-                        <img id="slide-5" src="images/bachelor.jpg" alt="bachelor" />
-                        <img id="slide-6" src="images/theepot.jpg" alt="theepot" />
-                        <img id="slide-7" src="images/kind.jpg" alt="kind" />
-                        <img id="slide-8" src="images/verjaardag.jpg" alt="verjaardag" />
-                    </div>
-                    <div class="slides-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                        <a href="#slide-4"></a>
-                        <a href="#slide-5"></a>
-                        <a href="#slide-6"></a>
-                        <a href="#slide-7"></a>
-                        <a href="#slide-8"></a>
-                    </div>
+    <section class="sectie">
+        <h1>Ontdek onze Turkse keuken!</h1>
+        <div class="tekst-menu">
+            <div class="keuze-menu">
+                <div class="keuze-menu-1">
+                    <a href="menu.html"><img src="images/hamburger.jpg" alt="hamburger"></a>
+                    <h3>Gerechten</h3>
                 </div>
+                <div class="keuze-menu-1">
+                    <a href="menu.html"><img src="images/baklava.jpg" alt="baklava"></a>
+                    <h3>Desserten</h3>
+                </div>
+                <div class="keuze-menu-1">
+                    <a href="menu.html"><img src="images/thee1.jpg" alt="thee"></a>
+                    <h3>Dranken</h3>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container">
+    </section>
+
+        <div class="video">
+            <video autoplay loop muted src="images/video.mp4"></video>
+        </div>
+    
+        <div class="introtekst">
+            <p>Welkom bij Mokka Lounge, in het charmante hart van Heusden! Na gezellig rond te wandelen en gewinkeld te hebben in Heusden Cité, kan je bij ons vertoeven in de Mokka Lounge. Gevuld met gezelligheid, zoete geur van verleidelijke lekkernijen, versgezette koffie en hartverwarmende glimlachen.</p>
+
+            <p>Wij trachten om meer te zijn dan zomaar een restaurant. We zouden graag een toevluchtsoord worden voor lokale levensgenieters en reizigers die de schoonheid wat Mokka lounge te bieden heeft kunnen waarderen. Hier draait alles om verhalen delen, vriendschappen smeden en momenten koesteren.</p>
+
+            <div class="quote"><blockquote>One cannot think well, love well, sleep well if one has not dined well. </blockquote><cite>- M.F.K. Fisher</cite></div>
+
+            <p>Onze gastvrije sfeer nodigt je uit om te ontspannen en te genieten van het moment met vrienden en familie. Zelfs als je langskomt voor een snelle koffie of voor een uitgebreide lunch in de middag, ons toegewijde team staat altijd klaar met een warme begroeting en een uitnodigende glimlach.</p>
+
+            <p>Laat je betoveren door de charme van Mokka Lounge in het hart van Heusden. Kom binnen, ontspan en word deel van ons verhaal. Hier worden herinneringen gemaakt en momenten omarmd - een kleine oase van geluk in de drukte van het dagelijkse leven.
+            </p>
+        </div>
+
         <div class="nieuwsbrief">
             <h2>Wilt u op de hoogte te blijven van veranderingen en nieuwigheden?</h2>
-            <div id="mc_embed_shell">
+            <div class="mc_embed_shell" id="mc_embed_shell">
                 
                 <div id="mc_embed_signup">
-                    <form
-                        action="https://hotmail.us21.list-manage.com/subscribe/post?u=1272eedc423d1369c89306f12&amp;id=bfbb90531a&amp;f_id=009f69e1f0"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                        target="_blank">
-                        <div id="mce-responses" class="clear foot">
-                            <div class="response" id="mce-error-response" style="display: none;"></div>
-                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                <form action="https://hotmail.us21.list-manage.com/subscribe/post?u=1272eedc423d1369c89306f12&amp;id=bfbb90531a&amp;f_id=009f69e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        /* real people should not fill this in and expect good things - do not remove this or risk form bot
+                        signups */
+                        <input type="text" name="b_1272eedc423d1369c89306f12_bfbb90531a" tabindex="-1" value="">
+                    </div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <button name="subscribe" id="mc-embedded-subscribe" class="button-nieuwsbrief" role="button"
+                                value="Subscribe">
+                                <span>
+                                    Schrijf je hier in!
+                                </span>
+                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iFTBn-"
+                                        title="Mailchimp - email marketing made easy and fun"></a></p>
+                            </button>
                         </div>
-                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                            /* real people should not fill this in and expect good things - do not remove this or risk form bot
-                            signups */
-                            <input type="text" name="b_1272eedc423d1369c89306f12_bfbb90531a" tabindex="-1" value="">
-                        </div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <button name="subscribe" id="mc-embedded-subscribe" class="button-82-pushable" role="button"
-                                    value="Subscribe">
-                                    <span class="button-82-shadow"></span>
-                                    <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">
-                                        Schrijf je hier in!
-                                    </span>
-                                    <p style="margin: 0px auto;"><a href="http://eepurl.com/iFTBn-"
-                                            title="Mailchimp - email marketing made easy and fun"></a></p>
-                                </button>
-                            </div>
-                        </div>
-                </div>
+                    </div>
                 </form>
+                </div>
             </div>
-          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-          
-           
         </div>
-    </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.7130068252654!2d5.298573477573855!3d51.03992114474526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c125753ddd0647%3A0x5c7f0020206d04ff!2sMokka%20Lounge!5e0!3m2!1snl!2sbe!4v1702307913828!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <footer>
-            <div class="containerfooter">
-                <div class="kolomfooter">
-                    <img src="images/LOGO.png" alt="logo van Mokka Lounge">
-                    <p><a href="gdpr.html">GDPR & Privacy regelementering</a></p>
+        <div class="containerfooter">
+            <div class="kolomfooter">
+                <img src="images/LOGO.png" alt="logo Mokka Lounge">
+                <p><a href="gdpr.html">GDPR & Privacy regelementering</a></p>
+            </div>
+
+            <div class="kolomfooter">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>Telnr. 011/19 00 57</p>
                 </div>
 
-                <div class="kolomfooter">
-                    <div class="contact">
-                        <h3>Contact</h3>
-                        <p>telnr. 011/19 00 57</p>
-                    </div>
-                    
-                    <div class="contact">
-                        <h3>Sociale media</h3>
-                        <a href="https://www.facebook.com/mokkaloungeheusden/?locale=nl_NL"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/mokkaloungeheusden/"><i class="fa-brands fa-instagram"></a></i>
-                    </div>
-                </div>
-                
-                <div class="kolomfooter">
-                    <div class="uren">
-                        <h3>Openingsuren</h3>
-                        <p>ma: <strong>Gesloten</strong></p>
-                        <p>di - do: <strong>12:00–00:00</strong></p>
-                        <p>vr - za: <strong>12:00–01:00</strong></p>
-                        <p>zo: <strong>14:00–23:00</strong></p>
-                    </div>
+                <div class="contact">
+                    <h3>Sociale media</h3>
+                    <a href="https://www.facebook.com/mokkaloungeheusden/?locale=nl_NL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mokkaloungeheusden/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-    </footer>
 
+            <div class="kolomfooter">
+                <div class="uren">
+                    <h3>Openingsuren</h3>
+                    <p>ma: <strong>gesloten</strong></p>
+                    <p>di - do: <strong>12:00-00:00</strong></p>
+                    <p>vr - za: <strong>12:00-01:00</strong></p>
+                    <p>zo: <strong>14:00-23:00</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
