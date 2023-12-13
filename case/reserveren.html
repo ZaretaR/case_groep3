@@ -30,28 +30,29 @@
             <form action="form.js" id="form-reserveer" method="post">
                 <h1>Reserveren</h1>
                 <div class="input-control">
-                    <label>Naam</label>
-                    <input id="naam" name="naam" type="text">
+                    <p><label>Naam</label></p>
                     <span class="error" id="naam_error"></span>
+                    <input id="naam" name="naam" type="text">
                 </div>
         
                 <div class="input-control">
-                    <label>Email</label>
-                    <input id="email" name="email" type="text">
+                    <p><label>Email</label></p>
                     <span class="error" id="email_error"></span>
+                    <input id="email" name="email" type="text">
                 </div>
         
                 <div class="input-control">
                     <label>Datum</label>
-                    <input id="datum" name="datum" type="text">
                     <span class="error" id="datum_error"></span>
+                    <input id="datum" name="datum" type="text">
                     <label>Uur</label>
-                    <input id="uur" name="uur" type="text">
                     <span class="error" id="uur_error"></span>
+                    <input id="uur" name="uur" type="text">
                 </div>
         
                 <div class="input-control">
                     <label for="gelegenheid">Gelegenheid</label>
+                    <span class="error" id="gelegenheid_error"></span>
                         <select name="gelegenheid" id="gelegenheid">
                         <option value=" "></option>
                         <option value="geen" id="geen">geen</option>
@@ -60,9 +61,9 @@
                         <option value="bachelorette" id="bachelorette">Bachelorette</option>
                         <option value="schoolevenement" id="schoolevenement">Schoolevenement</option>
                         </select>
-                        <span class="error" id="gelegenheid"></span>
                         
                     <label for="personen">Aantal personen</label>
+                    <span class="error" id="personen_error"></span>
                         <select name="personen" id="personen">
                         <option value=""></option>
                         <option value="1" id="1">1</option>
@@ -81,7 +82,6 @@
                         <option value="14" id="14">14</option>
                         <option value="15" id="15">15</option>
                         </select>
-                        <span class="error" id="personen_error"></span>
                 </div><br>
 
                 <div class="input-control">
@@ -89,7 +89,7 @@
                     <textarea name="bericht" id="" cols="30" rows="10"></textarea>
                 </div><br><br>
                 
-                <button type="submit">Verstuur</button>
+                <input type="button" value="Verstuur" id="knop_verstuur" onclick="verstuur()"/>
             </form>
             <img src="images/reservatie.jpg" alt="reserveren">
     </div>

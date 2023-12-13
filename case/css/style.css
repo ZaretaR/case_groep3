@@ -287,7 +287,7 @@ form h1 {
     font-size: 25px;
 }
 
-form button {
+.formulier input[type="button"] {
     padding: 10px;
     margin-top: 15px;
     width: 100%;
@@ -298,7 +298,7 @@ form button {
     font-weight: 800;
 }
 
-form button:hover {
+.formulier input[type="button"]:hover {
     background-color: rgb(92, 21, 49);
 }
 
